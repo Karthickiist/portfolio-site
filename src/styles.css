@@ -116,6 +116,7 @@ footer>p {
     font-weight: bolder;
     text-decoration: underline;
     margin-top: 50px;
+    font-size: 2rem;
 }
 
 /* ** about-page ** */
@@ -169,3 +170,21 @@ li::marker {
     margin: auto;
     margin-left: 100px;
 }
+
+/*shining animation*/
+
+.shining-button {
+    animation: shining 1s infinite alternate;
+    transition: transform 0.3s;
+    border: none;
+  }
+
+  .shining-button:hover {
+    transform: scale(1.2);
+  }
+
+  @keyframes shining {
+    to {
+      background-color: rgba(126, 121, 121, 0);
+    }
+  }
